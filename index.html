@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Drumkit</title>
+    <link rel="stylesheet" href="/Drumkit/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Drum Kit
+        </h1>
+        <h2>
+            Press the keys to hear your drum
+        </h2>
+    </header>
+    <div class="instrument">
+        <div class="key" data-key="65" ontouchstart= 'touching(65)'>
+            <h3>A</h3>
+            <h5>Clap</h5>
+        </div>
+        <div class="key" data-key="83" ontouchstart= 'touching(83)'>
+            <h3>S</h3>
+            <h5>Hihat</h5>
+        </div>
+        <div class="key" data-key="68" ontouchstart= 'touching(68)'>
+            <h3>D</h3>
+            <h5>Kick</h5>
+        </div>
+        <div class="key" data-key="70" ontouchstart= 'touching(70)'>
+            <h3>F</h3>
+            <h5>Openhat</h5>
+        </div>
+        <div class="key" data-key="71" ontouchstart= 'touching(71)'>
+            <h3>G</h3>
+            <h5>Boom</h5>
+        </div>
+        <div class="key" data-key="72" ontouchstart= 'touching(72)'>
+            <h3>H</h3>
+            <h5>Ride</h5>
+        </div>
+        <div class="key" data-key="74" ontouchstart= 'touching(74)'>
+            <h3>J</h3>
+            <h5>Snare</h5>
+        </div>
+        <div class="key" data-key="75" ontouchstart= 'touching(75)'>
+            <h3>K</h3>
+            <h5>Tom</h5>
+        </div>
+        <div class="key" data-key="76" ontouchstart= 'touching(76)'>
+            <h3>L</h3>
+            <h5>Tink</h5>
+        </div>
+        <audio src="./sounds/boom.wav" data-key="65"></audio>
+        <audio src="./sounds/clap.wav" data-key="83"></audio>
+        <audio src="./sounds/hihat.wav" data-key="68"></audio>
+        <audio src="./sounds/kick.wav" data-key="70"></audio>
+        <audio src="./sounds/openhat.wav" data-key="71"></audio>
+        <audio src="./sounds/ride.wav" data-key="72"></audio>
+        <audio src="./sounds/snare.wav" data-key="74"></audio>
+        <audio src="./sounds/tink.wav" data-key="75"></audio>
+        <audio src="./sounds/tom.wav" data-key="76"></audio>
+    </div>
+    <script src="/Drumkit/js/script.js"></script>
+</body>
+
+</html>
